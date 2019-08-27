@@ -1,123 +1,173 @@
 body {
-    /* background-color: black; */
-    /*height: 100%;*/
-    /*width:100%;*/
-    /*position: absolute;*/
-    font-family: futura-pt, sans-serif;
-    font-weight: 100;
-    color: black;
-  }
-  
-  /*FadeIn*/
-  .fadeIn {
-    font-size: 4em;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-  }
-  
-  .fadeIn span {
-    animation: fadeEffect 12s linear infinite 0s;
-    /* color: #fff; */
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-  }
+  /* background-color: black; */
+  /*height: 100%;*/
+  /*width:100%;*/
+  /*position: absolute;*/
+  font-family: futura-pt, sans-serif;
+  font-weight: 100;
+  color: black;
+}
+
+/*FadeIn*/
+.fadeIn {
+  font-size: 4em;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.fadeIn span {
+  animation: fadeEffect 12s linear infinite 0s;
+  /* color: #fff; */
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
 
 .fadeIn span:nth-child(2) {
-  animation-delay: 2s; }
+  animation-delay: 2s;
+}
 
 .fadeIn span:nth-child(3) {
-  animation-delay: 4s; }
+  animation-delay: 4s;
+}
 
 .fadeIn span:nth-child(4) {
-  animation-delay: 6s; }
+  animation-delay: 6s;
+}
 
 .fadeIn span:nth-child(5) {
-  animation-delay: 8s; }
+  animation-delay: 8s;
+}
 
 .fadeIn span:nth-child(6) {
-  animation-delay: 10s; }
-  
+  animation-delay: 10s;
+}
+
 /*FadeIn Animation*/
 @keyframes fadeEffect {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
+
   5% {
     opacity: 0;
-    transform: translateY(0px); }
+    transform: translateY(0px);
+  }
+
   10% {
     opacity: 1;
-    transform: translateY(0px); }
+    transform: translateY(0px);
+  }
+
   25% {
     opacity: 1;
-    transform: translateY(0px); }
+    transform: translateY(0px);
+  }
+
   30% {
     opacity: 0;
-    transform: translateY(0px); }
+    transform: translateY(0px);
+  }
+
   80% {
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
-    opacity: 0; } }
-  
-  
+    opacity: 0;
+  }
+}
+
+
+.section--header {
+  padding-top: 3rem;
+  text-align: center;
+  /* border: 2px solid red; */
+
+}
+
+.splash-logo {
+  background-color: #000 !important;
+  display: inline-block;
+  font-size: 3em;
+  font-weight: 500;
+  padding: .25em .5em;
+}
+
+.section--main {
+  padding-top: 6rem;
+  text-align: center;
+  /* border: 2px solid green; */
+}
+
+.section--main p {
+  margin-bottom: -20px;
+}
+
+.section--footer {
+  /* border: 2px solid blue; */
+  padding-top: 0rem;
+  text-align: center;
+}
+
+.section--footer div {
+  background-color: #000 !important;
+  color: white;
+  display: inline-block;
+  letter-spacing: .25em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+}
+
+.section--footer p {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+
   .section--header {
-    padding-top: 3rem;
-    text-align: center;
-    /* border: 2px solid red; */
-  
+    padding-top: 1rem;
   }
-  
-  .splash-logo {
-    background-color: #000 !important;
-    display: inline-block;
-    font-size: 3em;
-    font-weight: 500;
-    padding: .25em .5em;
-  }
-  
+
   .section--main {
-    padding-top: 6rem;
-    text-align: center;
-    /* border: 2px solid green; */
+    padding-top: 2rem;
   }
-  
-  .section--main p {
-    margin-bottom: -20px;
-  }
-  
+
   .section--footer {
-    /* border: 2px solid blue; */
     padding-top: 0rem;
-    text-align: center;
   }
-  
-  .section--footer div {
-    background-color: #000 !important;
-    color: white;
-    display: inline-block;
-    letter-spacing: .25em;
-    padding: 1em 2em;
-    text-transform: uppercase;
-  }
-  
+
   .section--footer p {
-    margin-top: 20px;
+    margin-top: 0px;
   }
-  
-  @media only screen and (min-width: 800px) {
-  
-    .section--header {
-      padding-top: 1rem;
-    }
-    .section--main {
-      padding-top: 2rem;
-    }
-    .section--footer {
-      padding-top: 0rem;
-    }
-    .section--footer p {
-      margin-top: 0px;
-    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  body {
+    background-color: #F5F5F5
   }
+
+  .wrapper {
+    background-color: #fff;
+    padding: 3rem;
+    margin: 0 auto;
+    width: fit-content;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .15);
+  }
+
+  .fadeIn span {
+    width: 350px;
+  }
+
+  .section--footer {
+    padding-top: 3rem;
+  }
+
+  .bg-dark--spalsh {
+    margin-bottom: 20px;
+  }
+
+}
