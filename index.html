@@ -2,16 +2,19 @@
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8837174-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8837174-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-8837174-2');
-</script>
-    
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-8837174-2');
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,8 +29,11 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/uat6wfq.css">
 
+    <!-- Font Icons -->
+    <script src="https://kit.fontawesome.com/05dbae279a.js" crossorigin="anonymous"></script>
+
     <title>Roy Vella | The Evolving Designr | HTMl, CSS, UI, Expert</title>
-    
+
 </head>
 
 <!-- * Default testing Better Comments -->
@@ -37,7 +43,7 @@
 <!-- // Strikethru testing comment -->
 
 <body>
-    <div class="wrapper" style="height: 90vh">
+    <div class="wrapper" style="height: 100vh">
         <!-- Header -->
         <section class="h-25 section--header">
             <div class="bg-dark text-light rounded splash-logo">rV</div>
@@ -47,22 +53,39 @@
         <section class="h-50 section--main">
             <p>roy Vella</p>
             <div class="fadeIn">
+                <span>HTML/CSS</span>
                 <span>UI Expert</span>
                 <span>Father</span>
                 <span>Designer</span>
                 <span>Animator</span>
                 <span>Husband</span>
-                <span>HTML / CSS Pro Level</span>
             </div>
+
+            <div class="bg-dark--splash">Coming Winter 2019</div>
+            <p>royVella.com is Evolving #EvolvingDesignr</p>
         </section>
 
         <!-- Footer -->
 
-        <section class="h-25 section--footer">
-            <div class="bg-dark--spalsh">Coming Fall 2019</div>
-            <p>royVella.com is Evolving #EvolvingDesignr</p>
-            <p>Design Sandbox on <a href="https://www.behance.net/royvella">Behance</a> | <a href="https://www.linkedin.com/in/roy-vella/" target="_blank">LinkedIn</a></p>
+        <section class="h-25 section--footer d-flex justify-content-between align-items-end">
+
+            
+                <div class="p-5">
+                    <a href="https://www.behance.net/royvella">
+                    <div><i class="fab fa-behance-square fa-2x"></i></div>
+                    <div>Behance</div>
+                    </a>
+                </div>
+
+                <div class="p-5">
+                    <a href="https://www.linkedin.com/in/roy-vella/" target="_blank">
+                    <div><i class="fab fa-linkedin fa-2x"></i></div>
+                    <div>LinkedIn</div>
+                </a>
+                </div>
+          
         </section>
     </div>
 </body>
+
 </html>

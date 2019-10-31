@@ -1,8 +1,4 @@
 body {
-  /* background-color: black; */
-  /*height: 100%;*/
-  /*width:100%;*/
-  /*position: absolute;*/
   font-family: futura-pt, sans-serif;
   font-weight: 100;
   color: black;
@@ -19,7 +15,6 @@ body {
 
 .fadeIn span {
   animation: fadeEffect 12s linear infinite 0s;
-  /* color: #fff; */
   opacity: 0;
   overflow: hidden;
   position: absolute;
@@ -82,10 +77,9 @@ body {
 
 
 .section--header {
+  /* border: 2px solid red; */
   padding-top: 3rem;
   text-align: center;
-  /* border: 2px solid red; */
-
 }
 
 .splash-logo {
@@ -97,32 +91,42 @@ body {
 }
 
 .section--main {
-  padding-top: 6rem;
   text-align: center;
+  padding-top: 1rem;
   /* border: 2px solid green; */
 }
 
 .section--main p {
-  margin-bottom: -20px;
+  margin-bottom: -12px;
+  padding: 1em;
 }
 
 .section--footer {
   /* border: 2px solid blue; */
-  padding-top: 0rem;
   text-align: center;
+  padding-bottom: 6rem;
 }
 
-.section--footer div {
+.section--footer a {
+  color: black;
+}
+
+.section--footer a:hover {
+  color: #333;
+}
+
+.bg-dark--splash {
   background-color: #000 !important;
   color: white;
   display: inline-block;
   letter-spacing: .25em;
   padding: 1em 2em;
   text-transform: uppercase;
+  margin-top: 7rem;
 }
 
-.section--footer p {
-  margin-top: 20px;
+.section--footer {
+  /* padding-top: 6rem; */
 }
 
 @media only screen and (min-width: 800px) {
@@ -166,8 +170,8 @@ body {
     padding-top: 3rem;
   }
 
-  .bg-dark--spalsh {
-    margin-bottom: 20px;
+  .bg-dark--splash {
+    margin-top: 1rem;
   }
 
 }
