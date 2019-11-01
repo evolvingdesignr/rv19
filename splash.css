@@ -97,14 +97,18 @@ body {
 }
 
 .section--main p {
+  letter-spacing: 0.07em;
   margin-bottom: -12px;
   padding: 1em;
 }
 
+#tagline {
+  padding-top: 12px;
+}
+
 .section--footer {
-  /* border: 2px solid blue; */
   text-align: center;
-  padding-bottom: 6rem;
+  /* border: 2px solid blue; */
 }
 
 .section--footer a {
@@ -129,49 +133,6 @@ body {
   /* padding-top: 6rem; */
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) {}
 
-  .section--header {
-    padding-top: 1rem;
-  }
-
-  .section--main {
-    padding-top: 2rem;
-  }
-
-  .section--footer {
-    padding-top: 0rem;
-  }
-
-  .section--footer p {
-    margin-top: 0px;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-
-  body {
-    background-color: #F5F5F5
-  }
-
-  .wrapper {
-    background-color: #fff;
-    padding: 3rem;
-    margin: 48px auto;
-    width: fit-content;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, .15);
-  }
-
-  .fadeIn span {
-    width: 350px;
-  }
-
-  .section--footer {
-    padding-top: 3rem;
-  }
-
-  .bg-dark--splash {
-    margin-top: 1rem;
-  }
-
-}
+@media only screen and (min-width: 1000px) {}
