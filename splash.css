@@ -156,3 +156,15 @@ body {
   }
 
 }
+
+/* Compact, aligned social links for desktop and mobile. */
+.section--footer .social-link-item { padding: 1rem; min-width: 0; }
+.section--footer .social-link { display: inline-flex; align-items: center; gap: 0.6rem; white-space: nowrap; font-size: 1rem; text-decoration: none; }
+.section--footer .social-link i { font-size: 1.8rem; flex-shrink: 0; }
+.section--footer .social-link:hover span { text-decoration: underline; }
+@media (max-width: 600px) {
+  .section--footer { align-items: center !important; padding: 0 0.5rem; }
+  .section--footer .social-link-item { padding: 0.5rem; }
+  .section--footer .social-link { gap: 0.4rem; font-size: 0.9rem; }
+  .section--footer .social-link i { font-size: 1.55rem; }
+}
